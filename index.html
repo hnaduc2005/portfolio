@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="icon" type="image/png" href="./assets/images/title-icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/CSS/main.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header__container">
+            <h1 class="header__logo text-gradient">
+                <a href="./index.html">My Portfolio</a>
+            </h1>
+            <nav class="header__navbar">
+                <ul>
+                    <a href="#about">
+                        <li>About me</li>
+                    </a>
+                    <a href="#projects">
+                        <li>Projects</li>
+                    </a>
+                    <a href="#skills">
+                        <li>Skills</li>
+                    </a>
+                    <a href="./contact.html">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Hero section -->
+    <section class="hero">
+        <div class="container hero__container">
+            <div class="hero__image">
+                <div class="avatar">
+                    <img src="./assets/images/hero__avatar.png" alt="">
+                </div>
+            </div>
+            <div class="hero__main">
+                <h1 class="hero__title text-gradient">
+                    Hi, I'm Duc
+                </h1>
+                <h2 class="hero__small-title">
+                    I'm a <span id="typing-text" class="text-gradient"></span><span id="cursor">|</span>
+                </h2>
+                <p class="hero__subtitle">
+                    I’m passionate about building dynamic and efficient websites that not only work smoothly but also
+                    deliver a
+                    seamless user experience. As a backend developer, I’m constantly learning and improving to create
+                    meaningful
+                    digital products that combine performance, reliability, and creativity.
+                </p>
+                <div class="hero__buttons">
+                    <a href="#projects" class="btn">View My Work</a>
+                    <a href="./contact.html" class="btn">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Hero section -->
+
+    <!-- About section -->
+    <section class="about" id="about">
+        <div class="container about__container different__container">
+            <h2 class="about__header section__header text-gradient">
+                About me
+            </h2>
+            <div class="about__main">
+                <div class="main__card">
+                    <div class="card__content personal-info">
+                        <div class="content__title">
+                            Personal Information
+                        </div>
+                        <div class="content__list">
+                            <div class="subtitle__item">
+                                <i class="fa-solid fa-address-card"></i>
+                                <p><span>Fullname:</span> Hoang Nguyen Anh Duc</p>
+                            </div>
+                            <div class="subtitle__item">
+                                <i class="fa-solid fa-cake-candles"></i>
+                                <p><span>Birthday:</span> 05/11/2005</p>
+                            </div>
+                            <div class="subtitle__item">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <p><span>University:</span> University of Transport HCM City</p>
+                            </div>
+                            <div class="subtitle__item">
+                                <i class="fa-solid fa-book"></i>
+                                <p><span>GPA:</span> 3.6</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__image">
+                        <img src="./assets/images/about__img-2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="main__card main__card--reverse">
+                    <div class="card__image">
+                        <img src="./assets/images/about__img-1.jpg" alt="">
+                    </div>
+                    <div class="card__content">
+                        <div class="content__title">
+                            Development Goals
+                        </div>
+                        <p class="paragraph">
+                            I’m passionate about growing as a <span>full-stack developer</span> and creating digital
+                            experiences that make people’s lives easier.
+                            In the future, I hope to work on <span>meaningful projects</span> that combine
+                            <span>creativity</span> with <span>technology</span>,
+                            especially in areas like <span>web development</span> and <span>cloud services</span>.
+                            I’m always eager to <span>learn</span>, <span>collaborate</span>, and keep <span>improving
+                                every day</span>.
+                        </p>
+
+                    </div>
+
+                </div>
+                <div class="main__card">
+                    <div class="card__content">
+                        <div class="content__title">
+                            Life Outside Coding
+                        </div>
+                        <p class="paragraph">
+                            Outside of coding, I love <span>staying active</span> and <span>exploring new
+                                experiences</span>. I often <span>play volleyball</span>, which helps me build
+                            <span>teamwork</span> and <span>communication skills</span> while keeping me energized. I
+                            also enjoy <span>traveling</span> to discover new places and cultures—it gives me
+                            <span>fresh perspectives</span> and inspiration for my work. In my free time, I like
+                            <span>experimenting with new technologies</span> and <span>optimizing systems</span>, always
+                            looking for creative ways to <span>improve performance and scalability</span>.
+                        </p>
+                    </div>
+                    <div class="card__image slider__wrapper">
+                        <div class="slider">
+                            <img src="./assets/images/about__img-1.jpg" alt="" id="slide-1">
+                            <img src="./assets/images/about__img-2.jpg" alt="" id="slide-2">
+                            <img src="./assets/images/about__img-3.jpg" alt="" id="slide-3">
+                        </div>
+                        <div class="slider-nav">
+                            <a href="#slide-1"></a>
+                            <a href="#slide-2"></a>
+                            <a href="#slide-3"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End about section -->
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+        <div class="projects__container container">
+            <h2 class="projects__header text-gradient section__header">Featured Projects</h2>
+
+            <div class="projects__list">
+                <div class="list__box">
+                    <img src="./assets/images/project1.png" alt="">
+                    <div class="box__layer">
+                        <h4>Antivirus Mask Store</h4>
+                        <p>An online store showcasing protective masks with a modern, interactive interface and dynamic
+                            hover effects.</p>
+                        <div class="layer__tech">
+                            <div class="tech">
+                                HTML5
+                            </div>
+                            <div class="tech">
+                                CSS3
+                            </div>
+                            <div class="tech">
+                                JavaScript
+                            </div>
+                        </div>
+                        <a href="https://mini-project-1-delta.vercel.app/" target="_blank">
+                            Live Preview
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="list__box">
+                    <img src="./assets/images/project2.png" alt="">
+                    <div class="box__layer">
+                        <h4>Web Design</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum excepturi aperiam est,
+                            officiis aliquid molestiae esse minus tempore illo praesentium, ipsa harum sed inventore.
+                            Earum accusamus obcaecati praesentium ullam quis.</p>
+                        <div class="layer__tech">
+                            <div class="tech">
+                                HTML5
+                            </div>
+                            <div class="tech">
+                                CSS3
+                            </div>
+                            <div class="tech">
+                                JavaScript
+                            </div>
+                        </div>
+                        <a href="#">
+                            Live Preview
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="list__box">
+                    <img src="./assets/images/project3.jpg" alt="">
+                    <div class="box__layer">
+                        <h4>Web Design</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum excepturi aperiam est,
+                            officiis aliquid molestiae esse minus tempore illo praesentium, ipsa harum sed inventore.
+                            Earum accusamus obcaecati praesentium ullam quis.</p>
+                        <div class="layer__tech">
+                            <div class="tech">
+                                HTML5
+                            </div>
+                            <div class="tech">
+                                CSS3
+                            </div>
+                            <div class="tech">
+                                JavaScript
+                            </div>
+                        </div>
+                        <a href="#">
+                            Live Preview
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End projects section -->
+
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+        <div class="container skills__container different__container">
+            <h2 class="skills__header section__header text-gradient">
+                Skills
+            </h2>
+            <div class="skills__main">
+                <div class="skills__main-column">
+                    <div class="column__header">
+                        <i class="bx bx-code-block"></i>
+                        <p>FRONTEND</p>
+                    </div>
+                    <div class="column__list">
+                        <ul>
+                            <li>
+                                <div class="skill__label">
+                                    <i class="fa-brands fa-html5" style="color: red;"></i>
+                                    <p>HTML5</p>
+                                </div>
+                                <div class="skill__bar html">
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="skill__label">
+                                    <i class="fa-brands fa-css3-alt" style="color: blue;"></i>
+                                    <p>CSS3</p>
+                                </div>
+                                <div class="skill__bar css">
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="skill__label">
+                                    <i class="fa-brands fa-square-js " style="color: yellow;"></i>
+                                    <p>JavaScript (ES6+)</p>
+                                </div>
+                                <div class="skill__bar js">
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="skill__label">
+                                    <i class="fa-brands fa-bootstrap" style="color: purple;"></i>
+                                    <p>Bootstrap</p>
+                                </div>
+                                <div class="skill__bar bootstrap">
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skills__main-column">
+                    <div class="column__header">
+                        <i class="fa-solid fa-server"></i>
+                        <p>BACKEND</p>
+                    </div>
+                    <div class="column__list">
+                        <ul>
+                            <li>
+                                <div class="skill__label">
+                                    <i class="fa-brands fa-php" style="color: #7377AD;"></i>
+                                    <p>PHP</p>
+                                </div>
+                                <div class="skill__bar php">
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="skill__label">
+                                    <i class="fa-brands fa-laravel" style="color: red;"></i>
+                                    <p>Laravel</p>
+                                </div>
+                                <div class="skill__bar laravel">
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="skill__label">
+                                    <i class="fa-brands fa-node-js" style="color: green;"></i>
+                                    <p>NodeJS</p>
+                                </div>
+                                <div class="skill__bar node">
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skills__main-column">
+                    <div class="column__header">
+                        <i class="fa-solid fa-database"></i>
+                        <p>DATABASE</p>
+                    </div>
+                    <div class="column__list">
+                        <ul>
+                            <li>
+                                <div class="skill__label">
+                                    <i class="fa-solid fa-database" style="color:#00758F;"></i>
+                                    <p>MySQL</p>
+                                </div>
+                                <div class="skill__bar mysql">
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="skill__label">
+                                    <i class="bx bxl-postgresql" style="color:#336791"></i>
+                                    <p>PostgreSQL</p>
+                                </div>
+                                <div class="skill__bar postgresql">
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="skill__label">
+                                    <i class="bx bxl-mongodb" style="color: green;"></i>
+                                    <p>MongoDb</p>
+                                </div>
+                                <div class="skill__bar mongo">
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End skills section -->
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container footer__container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <h3 class="footer__logo text-gradient">My Portfolio</h3>
+                </div>
+                <div class="footer__socials">
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>© 2025 My Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+    <!-- End footer -->
+
+    <script src="./assets/JS/main.js"></script>
+    <script src="./assets/JS/animation.js"></script>
+</body>
+
+
+</html>
