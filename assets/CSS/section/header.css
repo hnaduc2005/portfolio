@@ -44,8 +44,53 @@ header {
                 line-height: 1.2;
             }
         }
+    }
 
+    .languages-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 8px 14px;
+        border-radius: 8px;
+        background: #1e293b;
+        /* sáng hơn header một chút */
+        border: 1px solid #475569;
+        color: #f1f5f9;
+        font-size: 0.95rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.25s ease;
+        position: relative;
+        z-index: 10;
+    }
 
+    .languages-button:hover {
+        background: #334155;
+        border-color: #64748b;
+        transform: translateY(-1px);
+    }
+
+    .languages__image {
+        width: 26px;
+        height: 18px;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .languages__image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 3px;
+    }
+
+    .languages__name {
+        font-size: 0.9rem;
+        color: #e2e8f0;
+        letter-spacing: 0.5px;
     }
 
 }

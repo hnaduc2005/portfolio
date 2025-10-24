@@ -26,22 +26,32 @@
             <nav class="header__navbar">
                 <ul>
                     <a href="#about">
-                        <li>About me</li>
+                        <li data-en="About me" data-vi="Về tôi">About me</li>
                     </a>
                     <a href="#projects">
-                        <li>Projects</li>
+                        <li data-en="Projects" data-vi="Dự án">Projects</li>
                     </a>
                     <a href="#skills">
-                        <li>Skills</li>
+                        <li data-en="Skills" data-vi="Kỹ năng">Skills</li>
                     </a>
                     <a href="#certificates">
-                        <li>Certificates</li>
+                        <li data-en="Certificates" data-vi="Chứng chỉ">Certificates</li>
                     </a>
                     <a href="./contact.html">
-                        <li>Contact</li>
+                        <li data-en="Contact" data-vi="Liên hệ">Contact</li>
                     </a>
                 </ul>
             </nav>
+
+            <!-- Buttons -->
+            <div class="languages-button" id="lang-toggle">
+                <div class="languages__image">
+                    <img src="./assets/images/en-image.png" alt="English">
+                </div>
+                <div class="languages__name">EN</div>
+            </div>
+
+            <!-- End buttons -->
         </div>
     </header>
     <!-- End Header -->
@@ -55,24 +65,37 @@
                 </div>
             </div>
             <div class="hero__main">
-                <h1 class="hero__title text-gradient">
+                <h1 class="hero__title text-gradient" data-en="Hi, I'm Duc" data-vi="Xin chào, tôi là Đức">
                     Hi, I'm Duc
                 </h1>
+
                 <h2 class="hero__small-title">
-                    I'm a <span id="typing-text" class="text-gradient"></span><span id="cursor">|</span>
+                    <span data-en="I'm a" data-vi="Tôi là">I'm a</span>
+                    <span id="typing-text" class="text-gradient"></span>
+                    <span id="cursor">|</span>
                 </h2>
-                <p class="hero__subtitle">
+
+                <p class="hero__subtitle"
+                    data-en="I’m passionate about building dynamic and efficient websites that not only work smoothly but also deliver a seamless user experience. As a backend developer, I’m constantly learning and improving to create meaningful digital products that combine performance, reliability, and creativity."
+                    data-vi="Tôi đam mê xây dựng các trang web động và hiệu quả, không chỉ hoạt động mượt mà mà còn mang lại trải nghiệm người dùng liền mạch. Là một lập trình viên backend, tôi không ngừng học hỏi và cải thiện để tạo ra những sản phẩm số ý nghĩa kết hợp giữa hiệu suất, độ tin cậy và sự sáng tạo.">
                     I’m passionate about building dynamic and efficient websites that not only work smoothly but also
                     deliver a
                     seamless user experience. As a backend developer, I’m constantly learning and improving to create
                     meaningful
                     digital products that combine performance, reliability, and creativity.
                 </p>
+
                 <div class="hero__buttons">
-                    <a href="#projects" class="btn">View My Work</a>
-                    <a href="./contact.html" class="btn">Contact Me</a>
+                    <a href="#projects" class="btn" data-en="View My Work" data-vi="Xem Dự Án">
+                        View My Work
+                    </a>
+
+                    <a href="./contact.html" class="btn" data-en="Contact Me" data-vi="Liên Hệ">
+                        Contact Me
+                    </a>
                 </div>
             </div>
+
         </div>
     </section>
     <!-- End Hero section -->
@@ -80,81 +103,100 @@
     <!-- About section -->
     <section class="about" id="about">
         <div class="container about__container different__container">
-            <h2 class="about__header section__header text-gradient">
+            <h2 class="about__header section__header text-gradient" data-en="About me" data-vi="Về tôi">
                 About me
             </h2>
+
             <div class="about__main">
+                <!-- Card 1 -->
                 <div class="main__card">
                     <div class="card__content personal-info">
-                        <div class="content__title">
+                        <div class="content__title" data-en="Personal Information" data-vi="Thông tin cá nhân">
                             Personal Information
                         </div>
+
                         <div class="content__list">
                             <div class="subtitle__item">
                                 <i class="fa-solid fa-address-card"></i>
-                                <p><span>Fullname:</span> Hoang Nguyen Anh Duc</p>
+                                <p><span data-en="Fullname:" data-vi="Họ và tên:">Fullname:</span> Hoang Nguyen Anh Duc
+                                </p>
                             </div>
                             <div class="subtitle__item">
                                 <i class="fa-solid fa-cake-candles"></i>
-                                <p><span>Birthday:</span> 05/11/2005</p>
+                                <p><span data-en="Birthday:" data-vi="Ngày sinh:">Birthday:</span> 05/11/2005</p>
                             </div>
                             <div class="subtitle__item">
                                 <i class="fa-solid fa-graduation-cap"></i>
-                                <p><span>University:</span> University of Transport HCM City</p>
+                                <p>
+                                    <span data-en="University:" data-vi="Trường:">University:</span>
+                                    <p data-en="University of Transport HCM City"
+                                        data-vi="Đại học Giao thông Vận tải TP.HCM">University of Transport HCM
+                                        City</p>
+                                </p>
                             </div>
                             <div class="subtitle__item">
                                 <i class="fa-solid fa-book"></i>
-                                <p><span>GPA:</span> 3.6</p>
+                                <p><span data-en="GPA:" data-vi="Điểm trung bình:">GPA:</span> 3.6</p>
                             </div>
                         </div>
                     </div>
+
                     <div class="card__image">
-                        <img src="./assets/images/about__img-2.jpg" alt="">
+                        <img src="./assets/images/about__img-2.jpg" alt="Profile Image">
                     </div>
                 </div>
+
+                <!-- Card 2 -->
                 <div class="main__card main__card--reverse">
                     <div class="card__image">
-                        <img src="./assets/images/about__img-1.jpg" alt="">
+                        <img src="./assets/images/about__img-1.jpg" alt="Development Image">
                     </div>
+
                     <div class="card__content">
-                        <div class="content__title">
+                        <div class="content__title" data-en="Development Goals" data-vi="Mục tiêu phát triển">
                             Development Goals
                         </div>
-                        <p class="paragraph">
+
+                        <p class="paragraph"
+                            data-en="I’m passionate about growing as a full-stack developer and creating digital experiences that make people’s lives easier. In the future, I hope to work on meaningful projects that combine creativity with technology, especially in areas like web development and cloud services. I’m always eager to learn, collaborate, and keep improving every day."
+                            data-vi="Tôi đam mê phát triển bản thân thành lập trình viên full-stack và tạo ra những trải nghiệm số giúp cuộc sống con người dễ dàng hơn. Trong tương lai, tôi mong muốn tham gia vào các dự án ý nghĩa kết hợp giữa sáng tạo và công nghệ, đặc biệt trong lĩnh vực phát triển web và dịch vụ đám mây. Tôi luôn sẵn sàng học hỏi, hợp tác và cải thiện mỗi ngày.">
                             I’m passionate about growing as a <span>full-stack developer</span> and creating digital
-                            experiences that make people’s lives easier.
-                            In the future, I hope to work on <span>meaningful projects</span> that combine
-                            <span>creativity</span> with <span>technology</span>,
-                            especially in areas like <span>web development</span> and <span>cloud services</span>.
-                            I’m always eager to <span>learn</span>, <span>collaborate</span>, and keep <span>improving
-                                every day</span>.
+                            experiences that make people’s lives easier. In the future, I hope to work on
+                            <span>meaningful projects</span>
+                            that combine <span>creativity</span> with <span>technology</span>, especially in areas like
+                            <span>web development</span> and <span>cloud services</span>. I’m always eager to
+                            <span>learn</span>, <span>collaborate</span>, and keep <span>improving every day</span>.
                         </p>
-
                     </div>
-
                 </div>
+
+                <!-- Card 3 -->
                 <div class="main__card">
                     <div class="card__content">
-                        <div class="content__title">
+                        <div class="content__title" data-en="Life Outside Coding" data-vi="Cuộc sống ngoài lập trình">
                             Life Outside Coding
                         </div>
-                        <p class="paragraph">
+
+                        <p class="paragraph"
+                            data-en="Outside of coding, I love staying active and exploring new experiences. I often play volleyball, which helps me build teamwork and communication skills while keeping me energized. I also enjoy traveling to discover new places and cultures—it gives me fresh perspectives and inspiration for my work. In my free time, I like experimenting with new technologies and optimizing systems, always looking for creative ways to improve performance and scalability."
+                            data-vi="Ngoài việc lập trình, tôi thích vận động và khám phá những trải nghiệm mới. Tôi thường chơi bóng chuyền, giúp tôi rèn luyện kỹ năng làm việc nhóm và giao tiếp trong khi vẫn tràn đầy năng lượng. Tôi cũng thích du lịch để khám phá những vùng đất và nền văn hóa mới — điều đó mang lại cho tôi những góc nhìn mới mẻ và cảm hứng cho công việc. Trong thời gian rảnh, tôi thích thử nghiệm công nghệ mới và tối ưu hóa hệ thống, luôn tìm kiếm cách sáng tạo để cải thiện hiệu suất và khả năng mở rộng.">
                             Outside of coding, I love <span>staying active</span> and <span>exploring new
-                                experiences</span>. I often <span>play volleyball</span>, which helps me build
-                            <span>teamwork</span> and <span>communication skills</span> while keeping me energized. I
-                            also enjoy <span>traveling</span> to discover new places and cultures—it gives me
+                                experiences</span>.
+                            I often <span>play volleyball</span>, which helps me build <span>teamwork</span> and
+                            <span>communication skills</span> while keeping me energized. I also enjoy
+                            <span>traveling</span> to discover new places and cultures—it gives me
                             <span>fresh perspectives</span> and inspiration for my work. In my free time, I like
-                            <span>experimenting with new technologies</span> and <span>optimizing systems</span>, always
-                            looking for creative ways to <span>improve performance and scalability</span>.
+                            <span>experimenting with new technologies</span> and <span>optimizing systems</span>,
+                            always looking for creative ways to <span>improve performance and scalability</span>.
                         </p>
                     </div>
+
                     <div class="card__image slider__wrapper">
                         <div class="slider">
                             <img src="./assets/images/about__img-3.jpg" alt="" id="slide-1">
                             <img src="./assets/images/about__img-4.jpg" alt="" id="slide-4">
                             <img src="./assets/images/about__img-5.jpg" alt="" id="slide-5">
                             <img src="./assets/images/about__img-6.jpg" alt="" id="slide-6">
-
                         </div>
                         <div class="slider-nav">
                             <a href="#slide-1"></a>
@@ -167,80 +209,82 @@
             </div>
         </div>
     </section>
+
     <!-- End about section -->
 
     <!-- Projects section -->
     <section class="projects" id="projects">
         <div class="projects__container container">
-            <h2 class="projects__header text-gradient section__header">Featured Projects</h2>
+            <h2 class="projects__header text-gradient section__header" data-en="Featured Projects"
+                data-vi="Dự án nổi bật">
+                Featured Projects
+            </h2>
 
             <div class="projects__list">
+                <!-- PROJECT 1 -->
                 <div class="list__box">
                     <img src="./assets/images/project1.png" alt="">
                     <div class="box__layer">
-                        <h4>Antivirus Mask Store</h4>
-                        <p>An online store showcasing protective masks with a modern, interactive interface and dynamic
-                            hover effects.</p>
+                        <h4 data-en="Antivirus Mask Store" data-vi="Cửa hàng khẩu trang chống virus">Antivirus Mask
+                            Store</h4>
+                        <p data-en="An online store showcasing protective masks with a modern, interactive interface and dynamic hover effects."
+                            data-vi="Một cửa hàng trực tuyến giới thiệu các loại khẩu trang bảo hộ với giao diện hiện đại, tương tác và hiệu ứng hover sinh động.">
+                            An online store showcasing protective masks with a modern, interactive interface and dynamic
+                            hover effects.
+                        </p>
                         <div class="layer__tech">
-                            <div class="tech">
-                                HTML5
-                            </div>
-                            <div class="tech">
-                                CSS3
-                            </div>
-                            <div class="tech">
-                                JavaScript
-                            </div>
+                            <div class="tech" data-en="HTML5" data-vi="HTML5">HTML5</div>
+                            <div class="tech" data-en="CSS3" data-vi="CSS3">CSS3</div>
+                            <div class="tech" data-en="JavaScript" data-vi="JavaScript">JavaScript</div>
                         </div>
-                        <a href="https://mini-project-1-delta.vercel.app/" target="_blank">
+                        <a href="https://mini-project-1-delta.vercel.app/" target="_blank" data-en="Live Preview"
+                            data-vi="Xem trực tiếp">
                             Live Preview
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
                 </div>
+
+                <!-- PROJECT 2 -->
                 <div class="list__box">
                     <img src="./assets/images/project2.png" alt="">
                     <div class="box__layer">
-                        <h4>My Portfolio</h4>
-                        <p>A modern personal portfolio built with HTML, CSS, and JavaScript to showcase my skills,
+                        <h4 data-en="My Portfolio" data-vi="Trang cá nhân">My Portfolio</h4>
+                        <p data-en="A modern personal portfolio built with HTML, CSS, and JavaScript to showcase my skills, projects, and experience as a web developer. Clean design, smooth animations, and responsive layout for all devices."
+                            data-vi="Một trang portfolio cá nhân hiện đại được xây dựng bằng HTML, CSS và JavaScript để giới thiệu kỹ năng, dự án và kinh nghiệm của tôi với tư cách là lập trình viên web. Thiết kế tối giản, hiệu ứng mượt mà và bố cục phản hồi trên mọi thiết bị.">
+                            A modern personal portfolio built with HTML, CSS, and JavaScript to showcase my skills,
                             projects, and experience as a web developer. Clean design, smooth animations, and responsive
-                            layout for all devices..</p>
+                            layout for all devices.
+                        </p>
                         <div class="layer__tech">
-                            <div class="tech">
-                                HTML5
-                            </div>
-                            <div class="tech">
-                                CSS3
-                            </div>
-                            <div class="tech">
-                                JavaScript
-                            </div>
+                            <div class="tech" data-en="HTML5" data-vi="HTML5">HTML5</div>
+                            <div class="tech" data-en="CSS3" data-vi="CSS3">CSS3</div>
+                            <div class="tech" data-en="JavaScript" data-vi="JavaScript">JavaScript</div>
                         </div>
-                        <a href="https://portfolio-phi-lac-16.vercel.app/" target="_blank">
+                        <a href="https://portfolio-phi-lac-16.vercel.app/" target="_blank" data-en="Live Preview"
+                            data-vi="Xem trực tiếp">
                             Live Preview
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
                 </div>
+
+                <!-- PROJECT 3 -->
                 <div class="list__box">
                     <img src="./assets/images/project3.jpg" alt="">
                     <div class="box__layer">
-                        <h4>Web Design</h4>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum excepturi aperiam est,
-                            officiis aliquid molestiae esse minus tempore illo praesentium, ipsa harum sed inventore.
-                            Earum accusamus obcaecati praesentium ullam quis.</p>
+                        <h4 data-en="Web Design" data-vi="Thiết kế web">Web Design</h4>
+                        <p data-en="A creative and responsive web design layout demonstrating flexibility and attention to user experience."
+                            data-vi="Một bố cục thiết kế web sáng tạo và tương thích, thể hiện sự linh hoạt và chú trọng đến trải nghiệm người dùng.">
+                            A creative and responsive web design layout demonstrating flexibility and attention to user
+                            experience.
+                        </p>
                         <div class="layer__tech">
-                            <div class="tech">
-                                HTML5
-                            </div>
-                            <div class="tech">
-                                CSS3
-                            </div>
-                            <div class="tech">
-                                JavaScript
-                            </div>
+                            <div class="tech" data-en="HTML5" data-vi="HTML5">HTML5</div>
+                            <div class="tech" data-en="CSS3" data-vi="CSS3">CSS3</div>
+                            <div class="tech" data-en="JavaScript" data-vi="JavaScript">JavaScript</div>
                         </div>
-                        <a href="#">
+                        <a href="#" data-en="Live Preview" data-vi="Xem trực tiếp">
                             Live Preview
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
@@ -249,15 +293,18 @@
             </div>
         </div>
     </section>
+
     <!-- End projects section -->
 
     <!-- Skills section -->
     <section class="skills" id="skills">
         <div class="container skills__container different__container">
-            <h2 class="skills__header section__header text-gradient">
+            <h2 class="skills__header section__header text-gradient" data-en="Skills" data-vi="Kỹ năng">
                 Skills
             </h2>
+
             <div class="skills__main">
+                <!-- FRONTEND -->
                 <div class="skills__main-column">
                     <div class="column__header">
                         <i class="bx bx-code-block"></i>
@@ -268,42 +315,36 @@
                             <li>
                                 <div class="skill__label">
                                     <i class="fa-brands fa-html5" style="color: red;"></i>
-                                    <p>HTML5</p>
+                                    <p data-en="HTML5" data-vi="HTML5">HTML5</p>
                                 </div>
-                                <div class="skill__bar html">
-
-                                </div>
+                                <div class="skill__bar html"></div>
                             </li>
                             <li>
                                 <div class="skill__label">
                                     <i class="fa-brands fa-css3-alt" style="color: blue;"></i>
-                                    <p>CSS3</p>
+                                    <p data-en="CSS3" data-vi="CSS3">CSS3</p>
                                 </div>
-                                <div class="skill__bar css">
-
-                                </div>
+                                <div class="skill__bar css"></div>
                             </li>
                             <li>
                                 <div class="skill__label">
-                                    <i class="fa-brands fa-square-js " style="color: yellow;"></i>
-                                    <p>JavaScript (ES6+)</p>
+                                    <i class="fa-brands fa-square-js" style="color: yellow;"></i>
+                                    <p data-en="JavaScript (ES6+)" data-vi="JavaScript (ES6+)">JavaScript (ES6+)</p>
                                 </div>
-                                <div class="skill__bar js">
-
-                                </div>
+                                <div class="skill__bar js"></div>
                             </li>
                             <li>
                                 <div class="skill__label">
                                     <i class="fa-brands fa-bootstrap" style="color: purple;"></i>
-                                    <p>Bootstrap</p>
+                                    <p data-en="Bootstrap" data-vi="Bootstrap">Bootstrap</p>
                                 </div>
-                                <div class="skill__bar bootstrap">
-
-                                </div>
+                                <div class="skill__bar bootstrap"></div>
                             </li>
                         </ul>
                     </div>
                 </div>
+
+                <!-- BACKEND -->
                 <div class="skills__main-column">
                     <div class="column__header">
                         <i class="fa-solid fa-server"></i>
@@ -314,66 +355,56 @@
                             <li>
                                 <div class="skill__label">
                                     <i class="fa-brands fa-php" style="color: #7377AD;"></i>
-                                    <p>PHP</p>
+                                    <p data-en="PHP" data-vi="PHP">PHP</p>
                                 </div>
-                                <div class="skill__bar php">
-
-                                </div>
+                                <div class="skill__bar php"></div>
                             </li>
                             <li>
                                 <div class="skill__label">
                                     <i class="fa-brands fa-laravel" style="color: red;"></i>
-                                    <p>Laravel</p>
+                                    <p data-en="Laravel" data-vi="Laravel">Laravel</p>
                                 </div>
-                                <div class="skill__bar laravel">
-
-                                </div>
+                                <div class="skill__bar laravel"></div>
                             </li>
                             <li>
                                 <div class="skill__label">
                                     <i class="fa-brands fa-node-js" style="color: green;"></i>
-                                    <p>NodeJS</p>
+                                    <p data-en="NodeJS" data-vi="NodeJS">NodeJS</p>
                                 </div>
-                                <div class="skill__bar node">
-
-                                </div>
+                                <div class="skill__bar node"></div>
                             </li>
                         </ul>
                     </div>
                 </div>
+
+                <!-- DATABASE -->
                 <div class="skills__main-column">
                     <div class="column__header">
                         <i class="fa-solid fa-database"></i>
-                        <p>DATABASE</p>
+                        <p data-en="DATABASE" data-vi="CƠ SỞ DỮ LIỆU">DATABASE</p>
                     </div>
                     <div class="column__list">
                         <ul>
                             <li>
                                 <div class="skill__label">
                                     <i class="fa-solid fa-database" style="color:#00758F;"></i>
-                                    <p>MySQL</p>
+                                    <p data-en="MySQL" data-vi="MySQL">MySQL</p>
                                 </div>
-                                <div class="skill__bar mysql">
-
-                                </div>
+                                <div class="skill__bar mysql"></div>
                             </li>
                             <li>
                                 <div class="skill__label">
                                     <i class="bx bxl-postgresql" style="color:#336791"></i>
-                                    <p>PostgreSQL</p>
+                                    <p data-en="PostgreSQL" data-vi="PostgreSQL">PostgreSQL</p>
                                 </div>
-                                <div class="skill__bar postgresql">
-
-                                </div>
+                                <div class="skill__bar postgresql"></div>
                             </li>
                             <li>
                                 <div class="skill__label">
                                     <i class="bx bxl-mongodb" style="color: green;"></i>
-                                    <p>MongoDb</p>
+                                    <p data-en="MongoDB" data-vi="MongoDB">MongoDB</p>
                                 </div>
-                                <div class="skill__bar mongo">
-
-                                </div>
+                                <div class="skill__bar mongo"></div>
                             </li>
                         </ul>
                     </div>
@@ -381,15 +412,19 @@
             </div>
         </div>
     </section>
+
     <!-- End skills section -->
 
     <!-- Certificates section -->
     <section class="certificates" id="certificates">
         <div class="container certificates__container">
-            <div class="certificates__header section__header text-gradient">
+            <div class="certificates__header section__header text-gradient" data-en="Certificates" data-vi="Chứng chỉ">
                 Certificates
             </div>
+
             <div class="certificates__main">
+
+                <!-- CERTIFICATE 1 -->
                 <div class="certificate">
                     <div class="certificate__icon">
                         <i class="fa-solid fa-globe"></i>
@@ -398,12 +433,12 @@
                         <h3 class="certificate__title">
                             Full Stack Web Development With MERN STACK & GenAI 2025
                         </h3>
-                        <div class="certificate__subtitle">
+                        <div class="certificate__subtitle" data-en="Udemy • Learning" data-vi="Udemy • Đang học">
                             Udemy • Learning
                         </div>
                         <a class="certificate__link" target="_blank"
                             href="https://www.udemy.com/course/fullstack-web-development-course-projects-base/?utm_source=adwords&utm_medium=udemyads&utm_campaign=Search_Keyword_Alpha_Prof_la.ES_cc.ROW-Spanish&campaigntype=Search&portfolio=ROW-Spanish&language=ES&product=Course&test=&audience=Keyword&topic=JavaScript&priority=Alpha&utm_content=deal4584&utm_term=_._ag_160294399850_._ad_775604062686_._kw__._de_c_._dm__._pl__._ti_dsa-3500001_._li_9198844_._pd__._&matchtype=b&gad_source=1&gad_campaignid=21487757262&gbraid=0AAAAADROdO2ByoJjkYf6aaVVoIjNFzCE9&gclid=CjwKCAjwpOfHBhAxEiwAm1SwEg6nWZYTmWrVyNTWXTFPeRtXhItqXTbr_TQmOLI1UfkZgTtu7f-rtxoCX5cQAvD_BwE">
-                            <div class="link__text">
+                            <div class="link__text" data-en="Review course" data-vi="Xem khóa học">
                                 Review course
                             </div>
                             <div class="link__icon">
@@ -412,6 +447,8 @@
                         </a>
                     </div>
                 </div>
+
+                <!-- CERTIFICATE 2 -->
                 <div class="certificate">
                     <div class="certificate__icon">
                         <i class="fa-brands fa-aws"></i>
@@ -420,12 +457,12 @@
                         <h3 class="certificate__title">
                             AWS Certified DevOps Engineer Professional 2025 - DOP-C02
                         </h3>
-                        <div class="certificate__subtitle">
+                        <div class="certificate__subtitle" data-en="Udemy • Learning" data-vi="Udemy • Đang học">
                             Udemy • Learning
                         </div>
                         <a class="certificate__link" target="_blank"
-                            href="udemy.com/course/aws-certified-devops-engineer-professional-hands-on/?couponCode=PMNVD1525&utm_source=adwords&utm_medium=udemyads&utm_campaign=Search_Keyword_Alpha_Prof_la.ES_cc.ROW-Spanish&campaigntype=Search&portfolio=ROW-Spanish&language=ES&product=Course&test=&audience=Keyword&topic=AmazonAWS&priority=Alpha&utm_content=deal4584&utm_term=_._ag_160294399890_._ad_762856700329_._kw_aws%20certification_._de_c_._dm__._pl__._ti_kwd-1069044442_._li_9220955_._pd__._&matchtype=b&gad_source=1&gad_campaignid=21487757262&gbraid=0AAAAADROdO2ByoJjkYf6aaVVoIjNFzCE9&gclid=CjwKCAjwpOfHBhAxEiwAm1SwEgZ3HKXg6llLLQOSwwnRi6bO0jB-oxIxPYwFyPWV_NlxMxLU9rTnIxoCX-MQAvD_BwE">
-                            <div class="link__text">
+                            href="https://www.udemy.com/course/aws-certified-devops-engineer-professional-hands-on/?couponCode=PMNVD1525">
+                            <div class="link__text" data-en="Review course" data-vi="Xem khóa học">
                                 Review course
                             </div>
                             <div class="link__icon">
@@ -434,6 +471,8 @@
                         </a>
                     </div>
                 </div>
+
+                <!-- CERTIFICATE 3 -->
                 <div class="certificate">
                     <div class="certificate__icon">
                         <i class="fa-brands fa-docker"></i>
@@ -442,12 +481,12 @@
                         <h3 class="certificate__title">
                             Docker Mastery: with Kubernetes +Swarm from a Docker Captain
                         </h3>
-                        <div class="certificate__subtitle">
+                        <div class="certificate__subtitle" data-en="Udemy • Learning" data-vi="Udemy • Đang học">
                             Udemy • Learning
                         </div>
                         <a class="certificate__link" target="_blank"
-                            href="https://www.udemy.com/course/docker-interview-mastery-with-kubernetes-swarm-2023/?utm_source=adwords&utm_medium=udemyads&utm_campaign=Search_Keyword_Alpha_Prof_la.EN_cc.ROW-English_AI_Max_for_Search_TEST&campaigntype=Search&portfolio=ROW-English&language=EN&product=Course&test=&audience=Keyword&topic=Docker&priority=Alpha&utm_content=deal4584&utm_term=_._ag_184989176315_._ad_744641298844_._kw__._de_c_._dm__._pl__._ti_dsa-3500001_._li_9220955_._pd__._&matchtype=b&gad_source=1&gad_campaignid=22925795504&gbraid=0AAAAADROdO2XTiQxGg0btpA3Gd2GmahPj&gclid=CjwKCAjwpOfHBhAxEiwAm1SwElHk-XIEPOVP_SJAW-W2q6koUdG6Z2rxxZnRdBSz2fgAcz8V2xiKKBoCRYsQAvD_BwE&couponCode=PMNVD2525">
-                            <div class="link__text">
+                            href="https://www.udemy.com/course/docker-interview-mastery-with-kubernetes-swarm-2023/?couponCode=PMNVD2525">
+                            <div class="link__text" data-en="Review course" data-vi="Xem khóa học">
                                 Review course
                             </div>
                             <div class="link__icon">
@@ -456,9 +495,11 @@
                         </a>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
+
     <!-- End Certificates section -->
 
     <!-- Footer -->

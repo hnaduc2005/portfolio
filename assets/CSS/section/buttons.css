@@ -1,0 +1,60 @@
+/* ===== LANGUAGE SWITCH BUTTON ===== */
+.languages-button {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 0 12px rgba(124, 58, 237, 0.4);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    /* Ngăn hình tràn ra ngoài */
+    z-index: 9999;
+}
+
+.languages-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.7);
+}
+
+/* Ảnh cờ / biểu tượng ngôn ngữ */
+.languages__image {
+    width: 65%;
+    height: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    /* chặn tràn trong wrapper */
+}
+
+.languages__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* đảm bảo ảnh không méo */
+    border-radius: 50%;
+    transition: transform 0.4s ease;
+}
+
+/* Animation xoay nhẹ khi click */
+.languages-button.active .languages__image img {
+    transform: rotate(360deg);
+}
+
+.languages__name {
+    display: none;
+    /* nếu muốn hiện "EN"/"VI" thì bật lên */
+    position: absolute;
+    bottom: -20px;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 600;
+}

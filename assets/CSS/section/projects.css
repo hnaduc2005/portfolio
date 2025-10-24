@@ -65,6 +65,7 @@
                     font-weight: 600;
                     letter-spacing: 1px;
                     text-shadow: 0 0 10px rgba(168, 85, 247, 0.5);
+                    line-height: 1.2;
                 }
 
                 & p {
