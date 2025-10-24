@@ -53,3 +53,21 @@ const observer = new IntersectionObserver(
 );
 
 skillBars.forEach((bar) => observer.observe(bar));
+
+const sections = document.querySelectorAll('section[id]');
+const menuItems = document.querySelectorAll('.header__navbar li');
+
+const sectionObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        const id = entry.target.getAttribute('id');
+        const menuItem = document.querySelector(`.header__navbar a[href="#${id}"] li`);
+        if (entry.isIntersecting) {
+            menuItems.forEach(item => item.classList.remove('active'));
+            if (menuItem) menuItem.classList.add('active');
+        }
+    });
+}, {
+    threshold: 0.5
+});
+
+sections.forEach(section => sectionObserver.observe(section));
