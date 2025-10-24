@@ -524,8 +524,21 @@
         display: flex;
         align-items: center;
 
-        & .header__container .header__navbar {
-            display: none;
+        & .header__container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+
+            & .header__navbar {
+                display: none;
+            }
+
+            & .languages-button {
+                & .languages__name {
+                    display: none;
+                }
+            }
         }
     }
 
