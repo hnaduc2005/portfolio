@@ -687,6 +687,21 @@ button, input, textarea {
   transition: transform 0.4s ease;
 }
 
+.project-icon-coffee {
+  color: var(--amber);
+  filter: drop-shadow(0 10px 15px rgba(245, 158, 11, 0.3));
+}
+
+.project-icon-eco {
+  color: var(--emerald);
+  filter: drop-shadow(0 10px 15px rgba(16, 185, 129, 0.3));
+}
+
+.project-icon-portal {
+  color: var(--purple);
+  filter: drop-shadow(0 10px 15px rgba(139, 92, 246, 0.3));
+}
+
 .project-card:hover .project-icon-large {
   transform: scale(1.1) rotate(5deg);
 }
